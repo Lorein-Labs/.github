@@ -1,0 +1,30 @@
+name: "Rapport d'Anomalie"
+description: Signaler une erreur dans un workflow ou une simulation.
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Merci de nous aider à maintenir la qualité de **Lorein Labs**.
+  - type: input
+    id: workflow_link
+    attributes:
+      label: Lien du Workflow
+      description: Collez le lien vers l'exécution du workflow qui a échoué.
+      placeholder: "https://github.com..."
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Comportement observé
+      description: Que s'est-il passé exactement ?
+      placeholder: "Le script de simulation s'arrête à l'étape 3..."
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Comportement attendu
+      description: Que devrait-il se passer selon vos hypothèses ?
+      
