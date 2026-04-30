@@ -1,0 +1,30 @@
+name: "Demande d'Expertise Métier"
+description: Pour les sollicitations professionnelles ou audits.
+labels: ["expertise", "contact"]
+body:
+  - type: dropdown
+    id: service_type
+    attributes:
+      label: Nature de la demande
+      options:
+        - Audit d'architecture
+        - Simulation de système complexe
+        - Mise en place de Blueprints CI/CD
+        - Autre
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Contexte du Projet
+      description: Présentez brièvement l'organisation ou le projet concerné.
+    validations:
+      required: true
+  - type: checkboxes
+    id: confidentiality
+    attributes:
+      label: Confidentialité
+      options:
+        - label: Je confirme que cette demande ne contient aucune donnée sensible.
+          required: true
+          
