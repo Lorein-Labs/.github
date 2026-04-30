@@ -12,11 +12,11 @@ Notre approche repose sur la **rigueur scientifique** appliquée au cycle de vie
 
 ## 🏗️ Architecture de la Forge
 
-L'organisation est structurée de manière à garantir l'isolation des données et l'optimisation des ressources :
+L'organisation segmente ses activités pour garantir une sécurité maximale des données :
 
-1.  **[blueprints] :** Référentiel normatif contenant nos standards de développement, modèles de documentation et squelettes de workflows.
-2.  **Dépôts de Simulation :** Environnements isolés par projet pour l'exécution de tests de charge, de comportement et de sécurité.
-3.  **Laboratoires Temporaires :** Dépôts publics dédiés aux simulations complexes nécessitant une puissance de calcul étendue et une transparence totale.
+1.  **Gouvernance (Privé) :** Le dépôt `blueprints` centralise nos méthodologies propriétaires, rapports d'investigation critiques et actifs sensibles. C'est le moteur interne de nos simulations.
+2.  **Simulation & Preuves (Isolé) :** Chaque projet client ou recherche spécifique dispose d'un dépôt dédié. C'est ici que les preuves de concept sont exécutées et certifiées.
+3.  **Standardisation (Public) :** Le présent dépôt `.github` contient nos standards publics et nos modèles de licences pour garantir une transparence juridique totale.
 
 ## 📋 Règles de Fonctionnement
 
